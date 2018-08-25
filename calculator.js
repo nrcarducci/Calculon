@@ -1,4 +1,3 @@
-
 let input=[]; 
 input= document.getElementById("displayBox");
 
@@ -35,6 +34,7 @@ button7.addEventListener("click", makeSeven);
 button8.addEventListener("click", makeEight);
 button9.addEventListener("click", makeNine);
 button00.addEventListener("click", makeDoubleZero);
+calcButAC.addEventListener("click", clear);
 
 function makeZero(){
 
@@ -79,4 +79,8 @@ function makeNine(){
 
 function makeDoubleZero(){
     return input.innerHTML+=00;
+}
+
+function clear(){
+    return input.innerHTML=[];
 }
