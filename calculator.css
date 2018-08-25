@@ -4,6 +4,7 @@
     height:34em;
     background-color:grey;
     border:1px solid black;
+    margin:auto;
  }
  #calcInnerContainer{
     display:grid;
