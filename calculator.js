@@ -10,6 +10,16 @@ let button6 = document.getElementById("calcBut6");
 let button7 = document.getElementById("calcBut7");
 let button8 = document.getElementById("calcBut8");
 let button9 = document.getElementById("calcBut9");
+let button00 = document.getElementById("calcBut00");
+document.getElementById("calcButAC");
+document.getElementById("calButPlus_Minus");
+document.getElementById("calcButDot");
+document.getElementsByTagName("calcButEquals");
+document.getElementById("calcButDivide");
+document.getElementById("calcButMultiply");
+document.getElementById("calcButAdd");
+document.getElementById("calcButsubtract");
+
 
 button0.addEventListener("click", makeZero);
 button1.addEventListener("click", makeOne);
@@ -21,6 +31,7 @@ button6.addEventListener("click", makeSix);
 button7.addEventListener("click", makeSeven);
 button8.addEventListener("click", makeEight);
 button9.addEventListener("click", makeNine);
+button00.addEventListener("click", makeDoubleZero);
 
 function makeZero(){
 
@@ -61,4 +72,8 @@ function makeEight(){
 
 function makeNine(){
     return input.innerHTML=9;
+}
+
+function makeDoubleZero(){
+    return input.innerHTML=00;
 }
