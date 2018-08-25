@@ -1,10 +1,17 @@
-#calcOuterContainer{
+header{
+    font-family:garamond;
+    font-size:5em;
+    text-align:center;
+ }
+ #calcOuterContainer{
     display:block;
     width:26em;
-    height:34em;
+    height:32em;
     background-color:grey;
-    border:1px solid black;
+    /*border:1px solid black;*/
+    border-radius:5px;
     margin:auto;
+ 
  }
  #calcInnerContainer{
     display:grid;
@@ -12,7 +19,7 @@
     grid-template-rows:.5em 4em 4em 4em 4em 4em 4em .5em;
     grid-gap:1em;
     background-color:BFBDBB;
-    border:1px solid red;
+    /*border:1px solid red;*/
     border-radius:5px;
     justify-content:space-evenly;
  }
