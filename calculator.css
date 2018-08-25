@@ -10,7 +10,7 @@
    grid-template-columns:.5em 4em 4em 4em 4em .5em;
    grid-template-rows:.5em 4em 4em 4em 4em 4em 4em .5em;
    grid-gap:1em;
-   background-color:grey;
+   background-color:BFBDBB;
    border:1px solid red;
    border-radius:5px;
    justify-content:space-evenly;
@@ -18,13 +18,14 @@
 #displayBox{
    grid-column:2/6;
    grid-row:2/3;
-   background-color:white;
+   background-color:464B59;
    border:1px solid black;
 }
 #seven{
    grid-column:2/3;
    grid-row:4/5;
    background-color:blue;
+   font-display: F7F7FF;
 }
 #eight{
    grid-column:3/4;
@@ -114,7 +115,7 @@
 #plus_minus{
    grid-column:3/4;
    grid-row:3/4;
-   background-color:green;
+   background-color:AA6373;
 }
 #imgCalculon{
    grid-column:4/5;
