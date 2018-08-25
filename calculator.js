@@ -1,4 +1,6 @@
-let input = document.getElementById("displayBox");
+
+let input=[]; 
+input= document.getElementById("displayBox");
 
 let button0 = document.getElementById("calcBut0");
 let button1 = document.getElementById("calcBut1");
@@ -11,6 +13,7 @@ let button7 = document.getElementById("calcBut7");
 let button8 = document.getElementById("calcBut8");
 let button9 = document.getElementById("calcBut9");
 let button00 = document.getElementById("calcBut00");
+
 document.getElementById("calcButAC");
 document.getElementById("calButPlus_Minus");
 document.getElementById("calcButDot");
@@ -35,45 +38,45 @@ button00.addEventListener("click", makeDoubleZero);
 
 function makeZero(){
 
-    return input.innerHTML=0; 
+    return input.innerHTML+=0; 
 }
 
 function makeOne(){
 
-    return input.innerHTML=1; 
+    return input.innerHTML+=1; 
 }
 
 function makeTwo(){
-   return input.innerHTML=2;
+   return input.innerHTML+=2;
 }
 
 function makeThree(){
-    return input.innerHTML=3;
+    return input.innerHTML+=3;
 }
 
 function makeFour(){
-    return input.innerHTML=4;
+    return input.innerHTML+=4;
 }
 
 function makeFive(){
-    return input.innerHTML=5;
+    return input.innerHTML+=5;
 }
 function makeSix(){
-    return input.innerHTML=6;
+    return input.innerHTML+=6;
 }
 
 function makeSeven(){
-    return input.innerHTML=7;
+    return input.innerHTML+=7;
 }
 
 function makeEight(){
-    return input.innerHTML=8;
+    return input.innerHTML+=8;
 }
 
 function makeNine(){
-    return input.innerHTML=9;
+    return input.innerHTML+=9;
 }
 
 function makeDoubleZero(){
-    return input.innerHTML=00;
+    return input.innerHTML+=00;
 }
