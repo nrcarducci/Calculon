@@ -14,7 +14,7 @@ let button9 = document.getElementById("calcBut9");
 let button00 = document.getElementById("calcBut00");
 
 let buttonAdd = document.getElementById("calcButAdd");
-let buttonMinus = document.getElementById("calcButMinus");
+let buttonMinus = document.getElementById("calcButSubtract");
 let buttonMultiply = document.getElementById("calcButMultiply");
 let buttonDivide = document.getElementById("calcButDivide");
 let buttonEquals = document.getElementById("calcButEquals");
@@ -43,10 +43,6 @@ buttonMinus.addEventListener("click", makeMinus);
 buttonAdd.addEventListener("click", makeAdd);
 buttonEquals.addEventListener("click", makeEquals);
 
-
-function makeMultiply(){
-    return input.innerHTML+=X;
-}
 
 function makeZero(){
 
