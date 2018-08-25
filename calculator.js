@@ -48,6 +48,10 @@ buttonMinus.addEventListener("click", makeMinus);
 buttonMultiply.addEventListener("click", makeMultiply);
 buttonDivide.addEventListener("click", makeThree);
 
+function makeMultiply(){
+    return input.innerHTML+=X;
+}
+
 function makeZero(){
 
     return input.innerHTML+=0; 
