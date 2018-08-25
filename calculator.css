@@ -1,93 +1,128 @@
 #calcOuterContainer{
    display:block;
-   width:24em;
-   height:30em;
+   width:26em;
+   height:34em;
    background-color:grey;
    border:1px solid black;
 }
 #calcInnerContainer{
    display:grid;
-   grid-template-columns:3em 3em 3em 3em 3em;
-   grid-template-rows:4em 4em 4em 4em 4em 4em;
+   grid-template-columns:.5em 4em 4em 4em 4em .5em;
+   grid-template-rows:.5em 4em 4em 4em 4em 4em 4em .5em;
    grid-gap:1em;
    background-color:grey;
    border:1px solid red;
    border-radius:5px;
+   justify-content:space-evenly;
 }
 #displayBox{
    grid-column:2/6;
-   grid-row:1/2;
+   grid-row:2/3;
    background-color:white;
    border:1px solid black;
 }
 #seven{
    grid-column:2/3;
-   grid-row:3/4;
+   grid-row:4/5;
    background-color:blue;
 }
 #eight{
    grid-column:3/4;
-   grid-row:3/4;
+   grid-row:4/5;
    background-color:blue;
 }
 #nine{
    grid-column:4/5;
-   grid-row:3/4;
+   grid-row:4/5;
    background-color:blue;
 }
 #four{
    grid-column:2/3;
-   grid-row:4/5;
+   grid-row:5/6;
    background-color:blue;
 }
 #five{
    grid-column:3/4;
-   grid-row:4/5;
+   grid-row:5/6;
    background-color:blue;
 }
 #six{
    grid-column:4/5;
-   grid-row:4/5;
+   grid-row:5/6;
    background-color:blue;
 }
 #one{
    grid-column:2/3;
-   grid-row:5/6;
+   grid-row:6/7;
    background-color:blue;
 }
 #two{
    grid-column:3/4;
-   grid-row:5/6;
+   grid-row:6/7;
    background-color:blue;
 }
 #three{
    grid-column:4/5;
-   grid-row:5/6;
-   background-color:blue;
-}
-#zero{
-   grid-column:3/4;
    grid-row:6/7;
    background-color:blue;
 }
-#divide{
-   grid-column:5/6;
-   grid-row:2/3;
+#doubleZero{
+   grid-column:2/3;
+   grid-row:7/8;
    background-color:green;
 }
-#multiply{
+#zero{
+   grid-column:3/4;
+   grid-row:7/8;
+   background-color:blue;
+}
+#dot{
+   grid-column:4/5;
+   grid-row:7/8;
+   background-color:green;
+}
+#equals{
+   grid-column:5/6;
+   grid-row:7/8;
+   background-color:red;
+}
+#divide{
    grid-column:5/6;
    grid-row:3/4;
    background-color:green;
 }
-#add{
+#multiply{
    grid-column:5/6;
    grid-row:4/5;
    background-color:green;
 }
-#subtract{
+#add{
    grid-column:5/6;
    grid-row:5/6;
    background-color:green;
 }
+#subtract{
+   grid-column:5/6;
+   grid-row:6/7;
+   background-color:green;
+}
+#AC{
+   grid-column:2/3;
+   grid-row:3/4;
+   background-color:green;
+}
+#plus_minus{
+   grid-column:3/4;
+   grid-row:3/4;
+   background-color:green;
+}
+#imgCalculon{
+   grid-column:4/5;
+   grid-row:3/4;
+   background-color:purple;
+}
 
+#calcBut0{
+   
+   margin:auto;
+}
