@@ -44,6 +44,10 @@ buttonAdd.addEventListener("click", makeAdd);
 buttonEquals.addEventListener("click", makeEquals);
 
 
+function makeMultiply(){
+    return input.innerHTML+=X;
+}
+
 function makeZero(){
 
     return input.innerHTML+=0; 
