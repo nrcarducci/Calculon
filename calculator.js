@@ -11,42 +11,54 @@ let button7 = document.getElementById("calcBut7");
 let button8 = document.getElementById("calcBut8");
 let button9 = document.getElementById("calcBut9");
 
-document.button0.addEventListener("click", function(input){
-    input.innerHTML.push(0);
-})
+button0.addEventListener("click", makeZero);
+button1.addEventListener("click", makeOne);
+button2.addEventListener("click", makeTwo);
+button3.addEventListener("click", makeThree);
+button4.addEventListener("click", makeFour);
+button5.addEventListener("click", makeFive);
+button6.addEventListener("click", makeSix);
+button7.addEventListener("click", makeSeven);
+button8.addEventListener("click", makeEight);
+button9.addEventListener("click", makeNine);
 
-document.button1.addEventListener("click", function(input){
-    input.innerHTML.push(1);
-})
+function makeZero(){
 
-document.button2.addEventListener("click", function(input){
-    input.innerHTML.push(2);
-})
+    return input.innerHTML=0; 
+}
 
-document.button3.addEventListener("click", function(input){
-    input.innerHTML.push(3);
-})
+function makeOne(){
 
-document.button4.addEventListener("click", function(input){
-    input.innerHTML.push(4);
-})
+    return input.innerHTML=1; 
+}
 
-document.button5.addEventListener("click", function(input){
-    input.innerHTML.push(5);
-})
+function makeTwo(){
+   return input.innerHTML=2;
+}
 
-document.button6.addEventListener("click", function(input){
-    input.innerHTML.push(6);
-})
+function makeThree(){
+    return input.innerHTML=3;
+}
 
-document.button7.addEventListener("click", function(input){
-    input.innerHTML.push(7);
-})
+function makeFour(){
+    return input.innerHTML=4;
+}
 
-document.button8.addEventListener("click", function(input){
-    input.innerHTML.push(8);
-})
+function makeFive(){
+    return input.innerHTML=5;
+}
+function makeSix(){
+    return input.innerHTML=6;
+}
 
-document.button9.addEventListener("click", function(input){
-    input.innerHTML.push(9);
-})
+function makeSeven(){
+    return input.innerHTML=7;
+}
+
+function makeEight(){
+    return input.innerHTML=8;
+}
+
+function makeNine(){
+    return input.innerHTML=9;
+}
