@@ -1,5 +1,6 @@
 let input=[]; 
 input= document.getElementById("displayBox");
+let counter =0;
 
 let button0 = document.getElementById("calcBut0");
 let button1 = document.getElementById("calcBut1");
@@ -13,14 +14,22 @@ let button8 = document.getElementById("calcBut8");
 let button9 = document.getElementById("calcBut9");
 let button00 = document.getElementById("calcBut00");
 
+let buttonAdd = document.getElementById("calcButAdd");
+let buttonSubtract = document.getElementById("calcButSubtract");
+let buttonMultiply = document.getElementById("calcButMultiply");
+let buttonDivide = document.getElementById("calcButDivide");
+
+
+
 document.getElementById("calcButAC");
 document.getElementById("calButPlus_Minus");
 document.getElementById("calcButDot");
 document.getElementsByTagName("calcButEquals");
-document.getElementById("calcButDivide");
-document.getElementById("calcButMultiply");
-document.getElementById("calcButAdd");
-document.getElementById("calcButsubtract");
+
+buttonAdd.addEventListener("click", makeAdd);
+buttonSubtract.addEventListener("click", makeSubtract);
+buttonMultiply.addEventListener("click", makeMultiply);
+buttonDivide.addEventListener("click", makeDivide);
 
 
 button0.addEventListener("click", makeZero);
@@ -35,6 +44,8 @@ button8.addEventListener("click", makeEight);
 button9.addEventListener("click", makeNine);
 button00.addEventListener("click", makeDoubleZero);
 calcButAC.addEventListener("click", clear);
+
+
 
 function makeZero(){
 
@@ -83,4 +94,29 @@ function makeDoubleZero(){
 
 function clear(){
     return input.innerHTML=[];
+}
+
+while(input.innerHTML!="calcButAC")
+{
+    function makeAdd()
+    {
+        
+
+    }
+
+    function makeSubtract()
+    {
+
+
+    }
+    function makeMultiply()
+    {
+
+
+    }
+    function makeDivide()
+    {
+
+
+    }
 }
