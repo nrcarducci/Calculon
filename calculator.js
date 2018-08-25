@@ -111,11 +111,25 @@ function makeAdd()
 {
     return input.innerHTML+='+';
 }
-
+/*
 function makeEquals()
 {
-    let result = input.innerHTML.join('')
+    let result = input.innerHTML.join('');
     input = result;
 
     return input;
+}
+*/
+function makeEquals()
+{
+    let arr=document.getElementById("displayBox");;
+    var tot=0;
+    for(let i = 0;i<arr.length;i++)
+    {
+        if(parseInt(arr[i].value))
+        {
+            tot+=parseInt(arr[i].value)
+        }
+        document.getElementById("calcButEquals").value = total
+    }
 }
