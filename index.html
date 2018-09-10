@@ -1,27 +1,3 @@
-<!--<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-    <div id="calculator">
-        <form>
-            
-            <button type="button" id="calcBut1" value="1">1</button>
-            <button type="button" id="calcBut2" value="2">2</button>
-            <button type="button" id="calcBut3" value="3">3</button>
-            <button type="button" id="calcBut4" value="4">4</button>
-            <button type="button" id="calcBut5" value="5">5</button>
-            <button type="button" id="calcBut6" value="6">6</button>
-            <button type="button" id="calcBut7" value="7">7</button>
-            <button type="button" id="calcBut8" value="8">8</button>
-            <button type="button" id="calcBut9" value="9">9</button>
-            
-            <input type="text" placeholder="0" id="displayBox"></input>
-        </form>
-        </form>
-    </div>
-</body>
-</html>-->
 <html>
 <head>
    <title>The Calculon Calculator</title>
@@ -31,73 +7,75 @@
     <header>
         Team Calculon
     </header>
-   <div id="calcOuterContainer">
-      <div id="calcInnerContainer">
-         <div id="displayBox">
+<div id="calcOuterContainer">
+    <div id="calcInnerContainer">
+        <div id="displayBox">
             
-         </div>
-         <div id="AC">
+        </div>
+        <div id="AC">
             <button type = "button" id = "calcButAC"><span class="innerNum">AC</span></button>
-         </div>
-         <div id="plus_minus">
-            <button type = "button" id = "calcButPlus_Minus"><span class="innerNum">+/-</span></button>
-         </div>
-         <div id="imgCalculon">
-            <img id = "calculonBtn" src = "calculon-logo.png"/>
-         </div>
-         <div id="seven">
+        </div>
+        <div id="left_paren">
+            <button type = "button" id = "calcButLP"><span class = "innerNum">(</span></button> 
+        </div>
+        <div id="right_paren">
+            <button type = "button" id = "calcButRP"><span class = "innerNum">)</span></button>
+        </div>
+
+        <div id="seven">
             <button type = "button" id = "calcBut7"><span class="innerNum">7</span></button>
-         </div>
-         <div id="eight">
+        </div>
+        <div id="eight">
             <button type = "button" id = "calcBut8"><span class="innerNum">8</span></button>
-         </div>
-         <div id="nine">
+        </div>
+        <div id="nine">
             <button type = "button" id = "calcBut9"><span class="innerNum">9</span></button>
-         </div>
-         <div id="four">
+        </div>
+        <div id="four">
             <button type = "button" id = "calcBut4"><span class="innerNum">4</span></button>
-         </div>
-         <div id="five">
+        </div>
+        <div id="five">
             <button type = "button" id = "calcBut5"><span class="innerNum">5</span></button>
-         </div>
-         <div id="six">
+        </div>
+        <div id="six">
             <button type = "button" id = "calcBut6"><span class="innerNum">6</span></button>
-         </div>
-         <div id="one">
+        </div>
+        <div id="one">
             <button type = "button" id = "calcBut1"><span class="innerNum">1</span></button>
-         </div>
-         <div id="two">
+        </div>
+        <div id="two">
             <button type = "button" id = "calcBut2"><span class="innerNum">2</span></button>
-         </div>
-         <div id="three">
-            <button type = "button" id = "calcBut3"><span class="innerNum">3</span></button>  
-         </div>
-         <div id="doubleZero">
-            <button type = "button" id = "calcBut00"><span class="innerNum">00</span></button> 
-         </div>
-         <div id="zero">
+        </div>
+        <div id="three">
+            <button type = "button" id = "calcBut3"><span class="innerNum">3</span></button>
+        </div>
+
+        <div id="zero">
             <button type = "button" id = "calcBut0"><span class="innerNum">0</span></button>
-         </div>
-         <div id="dot">
+        </div>
+        <div id="plus_minus">
+            <button type = "button" id = "calcButPlus_Minus"><span class="innerNum">+/-</span></button>
+        </div>
+        <div id="dot">
             <button type = "button" id = "calcButDot"><span class="innerNum">.</span></button>
-         </div>
-         <div id="equals">
-            <button type = "button" id = "calcButEquals"><span class="innerNum">=</span></button>
-         </div>
-         <div id="divide">
+        </div>
+        <div id="divide">
             <button type = "button" id = "calcButDivide"><span class="innerNum">/</span></button>
-         </div>
-         <div id="multiply">
+        </div>
+        <div id="multiply">
             <button type = "button" id = "calcButMultiply"><span class="innerNum">x</span></button>
-         </div>
-         <div id="add">
+        </div>
+        <div id="add">
             <button type = "button" id = "calcButAdd"><span class="innerNum">+</span></button>
-         </div>
-         <div id="subtract">
+        </div>
+        <div id="subtract">
             <button type = "button" id = "calcButSubtract"><span class="innerNum">-</span></button>
-         </div>
-      </div>
-   </div>
+        </div>
+        <div id="equals">
+            <button type = "button" id = "calcButEquals"><span class="innerNum">=</span></button>
+        </div>
+    </div>
+</div>
 
 <script src="calculator.js"></script>
 </body>

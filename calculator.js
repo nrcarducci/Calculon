@@ -1,7 +1,9 @@
-let input; 
-input= document.getElementById("displayBox");
+/*We still need to figure out how to handle the display box overflow of very large numbers.  try 5/99 to see what i mean.  Right now it can hold 13 digits and still look right.  Maybe shrink the text size to fit larger digits?  Increase the dislplay area size?*/
 
-let button0 = document.getElementById("calcBut0");
+let displayBox = document.getElementById("displayBox");
+
+/*------declare the number buttons------*/
+
 let button1 = document.getElementById("calcBut1");
 let button2 = document.getElementById("calcBut2");
 let button3 = document.getElementById("calcBut3");
@@ -11,125 +13,84 @@ let button6 = document.getElementById("calcBut6");
 let button7 = document.getElementById("calcBut7");
 let button8 = document.getElementById("calcBut8");
 let button9 = document.getElementById("calcBut9");
+let button0 = document.getElementById("calcBut0");
 let button00 = document.getElementById("calcBut00");
 
+/*-add event listeners to the number buttons-*/
+
+button1.addEventListener("click", function(){
+   displayBox.innerHTML += 1;
+})
+button2.addEventListener("click", function(){
+   displayBox.innerHTML += 2;
+})
+button3.addEventListener("click", function(){
+   displayBox.innerHTML += 3;
+})
+button4.addEventListener("click", function(){
+   displayBox.innerHTML += 4;
+})
+button5.addEventListener("click", function(){
+   displayBox.innerHTML += 5;
+})
+button6.addEventListener("click", function(){
+   displayBox.innerHTML += 6;
+})
+button7.addEventListener("click", function(){
+   displayBox.innerHTML += 7;
+})
+button8.addEventListener("click", function(){
+   displayBox.innerHTML += 8;
+})
+button9.addEventListener("click", function(){
+   displayBox.innerHTML += 9;
+})
+button0.addEventListener("click", function(){
+   displayBox.innerHTML += 0;
+})
+
+/*------declare the non-number buttons------*/
+
+let buttonAC = document.getElementById("calcButAC");
+let buttonLP = document.getElementById("calcButLP");
+let buttonRP = document.getElementById("calcButRP");
+let buttonDiv = document.getElementById("calcButDivide");
+let buttonMult = document.getElementById("calcButMultiply");
 let buttonAdd = document.getElementById("calcButAdd");
-let buttonMinus = document.getElementById("calcButSubtract");
-let buttonMultiply = document.getElementById("calcButMultiply");
-let buttonDivide = document.getElementById("calcButDivide");
-let buttonEquals = document.getElementById("calcButEquals");
+let buttonSub = document.getElementById("calcButSubtract");
+let buttonEq = document.getElementById("calcButEquals");
+let buttonDot = document.getElementById("calcButDot");
+let buttonPlusMinus = document.getElementById("calcButPlus_Minus");
 
-document.getElementById("calcButAC");
-document.getElementById("calButPlus_Minus");
-document.getElementById("calcButDot");
+/*add event listeners to non-number buttons*/
 
-
-
-button0.addEventListener("click", makeZero);
-button1.addEventListener("click", makeOne);
-button2.addEventListener("click", makeTwo);
-button3.addEventListener("click", makeThree);
-button4.addEventListener("click", makeFour);
-button5.addEventListener("click", makeFive);
-button6.addEventListener("click", makeSix);
-button7.addEventListener("click", makeSeven);
-button8.addEventListener("click", makeEight);
-button9.addEventListener("click", makeNine);
-button00.addEventListener("click", makeDoubleZero);
-calcButAC.addEventListener("click", clear);
-buttonDivide.addEventListener("click", makeDivide);
-buttonMultiply.addEventListener("click", makeMultiply);
-buttonMinus.addEventListener("click", makeMinus);
-buttonAdd.addEventListener("click", makeAdd);
-buttonEquals.addEventListener("click", makeEquals);
-
-
-function makeZero(){
-
-    return input.innerHTML+=0; 
-}
-
-function makeOne(){
-
-    return input.innerHTML+=1; 
-}
-
-function makeTwo(){
-   return input.innerHTML+=2;
-}
-
-function makeThree(){
-    return input.innerHTML+=3;
-}
-
-function makeFour(){
-    return input.innerHTML+=4;
-}
-
-function makeFive(){
-    return input.innerHTML+=5;
-}
-function makeSix(){
-    return input.innerHTML+=6;
-}
-
-function makeSeven(){
-    return input.innerHTML+=7;
-}
-
-function makeEight(){
-    return input.innerHTML+=8;
-}
-
-function makeNine(){
-    return input.innerHTML+=9;
-}
-
-function makeDoubleZero(){
-    return input.innerHTML+=00;
-}
-
-function clear(){
-    return input.innerHTML=[];
-}
-
-function makeDivide()
-{
-    return input.innerHTML+='/';
-}
-function makeMultiply()
-{
-    return input.innerHTML+='*';
-}
-
-function makeMinus()
-{
-    return input.innerHTML+='-';
-}
-
-function makeAdd()
-{
-    return input.innerHTML+='+';
-}
-/*
-function makeEquals()
-{
-    let result = input.innerHTML.join('');
-    input = result;
-
-    return input;
-}
-*/
-function makeEquals()
-{
-    let arr=document.getElementById("displayBox");;
-    var tot=0;
-    for(let i = 0;i<arr.length;i++)
-    {
-        if(parseInt(arr[i].value))
-        {
-            tot+=parseInt(arr[i].value)
-        }
-        document.getElementById("calcButEquals").value = total
-    }
-}
+buttonAC.addEventListener("click", function(){
+   displayBox.innerHTML = "";
+})
+buttonLP.addEventListener("click", function(){
+   displayBox.innerHTML += "(";
+})
+buttonRP.addEventListener("click", function(){
+   displayBox.innerHTML += ")";
+})
+buttonDiv.addEventListener("click", function(){
+   displayBox.innerHTML += "/";
+})
+buttonMult.addEventListener("click", function(){
+   displayBox.innerHTML += "*";
+})
+buttonAdd.addEventListener("click", function(){
+   displayBox.innerHTML += "+";
+})
+buttonSub.addEventListener("click", function(){
+   displayBox.innerHTML += "-";
+})
+buttonEq.addEventListener("click", function(){
+   displayBox.innerHTML = eval(String(displayBox.innerHTML));
+})
+buttonDot.addEventListener("click", function(){
+   displayBox.innerHTML += ".";
+})
+buttonPlusMinus.addEventListener("click", function(){
+   displayBox.innerHTML = displayBox.innerHTML *(-1);
+})

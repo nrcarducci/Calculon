@@ -29,132 +29,11 @@ header{
     color:f7f7ff;
     grid-column:2/6;
     grid-row:2/3;
+    padding:0 .19em 0 .19em;
     background-color:60656f;
     border:1px solid black;
  }
- #calculonBtn{
-    width:100%;
- }
- #seven{
-    display:flex;
-    justify-content:center;
-    grid-column:2/3;
-    grid-row:4/5;
-    background-color:#131112;
-    font-display: #F7F7FF;
- }
- #eight{
-    display:flex;
-    justify-content:center;
-    grid-column:3/4;
-    grid-row:4/5;
-    background-color:#131112;
- }
- #nine{
-    display:flex;
-    justify-content:center;
-    grid-column:4/5;
-    grid-row:4/5;
-    background-color:#131112;
- }
- #four{
-    display:flex;
-    justify-content:center;
-    grid-column:2/3;
-    grid-row:5/6;
-    background-color:#131112;
- }
- #five{
-    display:flex;
-    justify-content:center;
-    grid-column:3/4;
-    grid-row:5/6;
-    background-color:#131112;
- }
- #six{
-    display:flex;
-    justify-content:center;
-    grid-column:4/5;
-    grid-row:5/6;
-    background-color:#131112;
- }
- #one{
-    display:flex;
-    justify-content:center;
-    grid-column:2/3;
-    grid-row:6/7;
-    background-color:#131112;
- }
- #two{
-    display:flex;
-    justify-content:center;
-    grid-column:3/4;
-    grid-row:6/7;
-    background-color:#131112;
- }
- #three{
-    display:flex;
-    justify-content:center;
-    grid-column:4/5;
-    grid-row:6/7;
-    background-color:#131112;
- }
- #doubleZero{
-    display:flex;
-    justify-content:center;
-    grid-column:2/3;
-    grid-row:7/8;
-    background-color:#131112;
- }
- #zero{
-    display:flex;
-    justify-content:center;
-    grid-column:3/4;
-    grid-row:7/8;
-    background-color:#131112;
- }
- #dot{
-    display:flex;
-    justify-content:center;
-    grid-column:4/5;
-    grid-row:7/8;
-    background-color:#2e294e;
- }
- #equals{
-    display:flex;
-    justify-content:center;
-    grid-column:5/6;
-    grid-row:7/8;
-    background-color:#427f43;
- }
- #divide{
-    display:flex;
-    justify-content:center;
-    grid-column:5/6;
-    grid-row:3/4;
-    background-color:#2e294e;
- }
- #multiply{
-    display:flex;
-    justify-content:center;
-    grid-column:5/6;
-    grid-row:4/5;
-    background-color:#2e294e;
- }
- #add{
-    display:flex;
-    justify-content:center;
-    grid-column:5/6;
-    grid-row:5/6;
-    background-color:#2e294e;
- }
- #subtract{
-    display:flex;
-    justify-content:center;
-    grid-column:5/6;
-    grid-row:6/7;
-    background-color:#2e294e;
- }
+ 
  #AC{
     display:flex;
     justify-content:center;
@@ -162,173 +41,318 @@ header{
     grid-row:3/4;
     background-color:#2e294e;
  }
- #plus_minus{
+    #calcButAC{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#488b49;
+       margin:auto; 
+    }
+ 
+ #left_paren{
     display:flex;
     justify-content:center;
     grid-column:3/4;
     grid-row:3/4;
-    background-color:#AA6373;
+    background-color:#2e294e;
  }
- #imgCalculon{
+    #calcButLP{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#AA6373;
+       margin:auto;
+    }
+ 
+ #right_paren{
     display:flex;
     justify-content:center;
     grid-column:4/5;
     grid-row:3/4;
-    background-color:purple;
+    background-color:#2e294e;
  }
+    #calcButRP{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#AA6373;
+       margin:auto;
+    }
  
- #calcButAC{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#694d75;
-    margin:auto; 
+ #divide{
+    display:flex;
+    justify-content:center;
+    grid-column:5/6;
+    grid-row:3/4;
+    background-color:#2e294e;
  }
- #calcButPlus_Minus{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#AA6373;
-    margin:auto;
+    #calcButDivide{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#694d75;
+       margin:auto; 
+    }
+ 
+ #multiply{
+    display:flex;
+    justify-content:center;
+    grid-column:5/6;
+    grid-row:4/5;
+    background-color:#2e294e;
  }
- #calcBut7{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcButMultiply{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#694d75;
+       margin:auto; 
+    }
+ 
+ #add{
+    display:flex;
+    justify-content:center;
+    grid-column:5/6;
+    grid-row:5/6;
+    background-color:#2e294e;
+ }
+    #calcButAdd{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#694d75;
+       margin:auto; 
+    }
+ 
+ #subtract{
+    display:flex;
+    justify-content:center;
+    grid-column:5/6;
+    grid-row:6/7;
+    background-color:#2e294e;
+ }
+    #calcButSubtract{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#694d75;
+       margin:auto; 
+    }
+ 
+ #equals{
+    display:flex;
+    justify-content:center;
+    grid-column:5/6;
+    grid-row:7/8;
+    background-color:#2e294e;
+ }
+    #calcButEquals{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#488b49;
+       margin:auto; 
+    }
+ 
+ #dot{
+    display:flex;
+    justify-content:center;
+    grid-column:4/5;
+    grid-row:7/8;
+    background-color:#2e294e;
+ }
+    #calcButDot{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#AA6373;
+       margin:auto; 
+    }
+ 
+ #plus_minus{
+    display:flex;
+    justify-content:center;
+    grid-column:3/4;
+    grid-row:7/8;
+    background-color:#2e294e;
+ }
+    #calcButPlus_Minus{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#AA6373;
+       margin:auto;
+    }
+ 
+ #seven{
+    display:flex;
+    justify-content:center;
+    grid-column:2/3;
+    grid-row:4/5;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut8{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut7{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #eight{
+    display:flex;
+    justify-content:center;
+    grid-column:3/4;
+    grid-row:4/5;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut9{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut8{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #nine{
+    display:flex;
+    justify-content:center;
+    grid-column:4/5;
+    grid-row:4/5;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut4{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut9{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #four{
+    display:flex;
+    justify-content:center;
+    grid-column:2/3;
+    grid-row:5/6;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut5{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut4{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #five{
+    display:flex;
+    justify-content:center;
+    grid-column:3/4;
+    grid-row:5/6;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut6{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut5{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #six{
+    display:flex;
+    justify-content:center;
+    grid-column:4/5;
+    grid-row:5/6;
     background-color:#131112;
-    margin:auto; 
  }
- #calcbut1{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut6{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #one{
+    display:flex;
+    justify-content:center;
+    grid-column:2/3;
+    grid-row:6/7;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut2{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcbut1{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #two{
+    display:flex;
+    justify-content:center;
+    grid-column:3/4;
+    grid-row:6/7;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut3{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut2{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #three{
+    display:flex;
+    justify-content:center;
+    grid-column:4/5;
+    grid-row:6/7;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut00{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
+    #calcBut3{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
+ 
+ #zero{
+    display:flex;
+    justify-content:center;
+    grid-column:2/3;
+    grid-row:7/8;
     background-color:#131112;
-    margin:auto; 
  }
- #calcBut0{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#131112;
-    margin:auto; 
- }
- #calcButDot{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#694d75;
-    margin:auto; 
- }
- #calcButEquals{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#488b49;
-    margin:auto; 
- }
- #calcButDivide{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#694d75;
-    margin:auto; 
- }
- #calcButMultiply{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#694d75;
-    margin:auto; 
- }
- #calcButAdd{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#694d75;
-    margin:auto; 
- }
- #calcButSubtract{
-    width:4em;
-    height:4em;
-    font-weight:bold;
-    color:white;
-    background-color:#694d75;
-    margin:auto; 
- }
+    #calcBut0{
+       width:4em;
+       height:4em;
+       font-weight:bold;
+       color:white;
+       background-color:#131112;
+       margin:auto; 
+    }
  .innerNum{
     font-size:2em;
  }
